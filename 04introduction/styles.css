@@ -1,0 +1,145 @@
+
+/* Base body styling */
+body {
+    font-family: "Oxygen", sans-serif;
+    line-height: 1.5; /* Set line-height for better spacing between lines */
+}
+
+/* Styling for light font weight */
+.oxygen-light {
+    font-family: "Oxygen", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Styling for bold font weight */
+.oxygen-bold {
+    font-family: "Oxygen", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Header styling */
+header {
+    background-color: #d9cfc1;
+    padding: 1rem 2%;
+}
+
+header h1 {
+    margin: 0; /* Fixed color declaration */
+    color: #ba3f1d;
+}
+
+header p {
+    margin: 0; /* Fixed color declaration */
+    color: #ba3f1d;
+    letter-spacing: 0.5px;
+}
+
+/* Nav styling */
+nav {
+    background-color: #c5d9ed;   
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+
+nav a {
+    font-size: 1.1rem; /* Font size for nav links */
+    text-decoration: none; /* No underline */
+    color: #024873; /* Default color for nav links */
+    font-weight: 700; /* Bold text */
+    display: block; /* Block display for padding */
+    padding: 0.83rem 2rem; /* Padding for links */
+}
+
+nav li.active a {
+    background-color: #6F4E37; /* Background color for active link */
+    color: #c5d9ed; /* Text color for active link */
+}
+
+nav a:hover {
+    color: #fff; /* Text color changes to white on hover */
+}
+
+/* Main content styling */
+main {
+    padding: 1rem 2vw; /* Padding for the main section */
+}
+
+main h1 {
+    color: #ba3f1d; /* Color for main heading */
+}
+
+main h2 {
+    color: #6F4E37: !important; /* Force color for subheading */
+    margin-bottom: 1rem;
+}
+
+}
+
+main p {
+    color: #; /* Paragraph color */
+    margin: 0 0 0.3rem 0; /* Margin: top, right, bottom, left */
+}
+
+main ol {
+    padding: 0.5rem 3vw; /* Padding for ordered lists */
+    background-color: #d9cfc1; /* Background color for ordered lists */
+}
+
+main dl dt {
+    color: #b40412; /* Color for definition terms */
+    font-weight: 700; /* Bold text for terms */
+}
+
+main dl dd {
+    color: #024873; /* Color for definition descriptions */
+    font-size: 1rem; /* Font size for descriptions */
+}
+
+main ul {
+    list-style-type: circle; /* Bullet style for unordered lists */
+}
+
+main ul li {
+    line-height: 1.25; /* Adjust line height for list items */
+    margin-bottom: 0.5rem; /* Space below list items */
+    font-size: 1rem; /* Adjust the font size as needed */
+}
+
+main address {
+    font-style: normal; /* Normal font style for address */
+    background-color: #c5d9ed; /* Background color for address */
+    padding: 0.5rem; /* Padding around address */
+    width: 12.5rem; /* Fixed width for address box */
+    border: 1px solid #024873; /* Border style */
+    border-radius: 5px; /* Rounded corners for address */
+}
+
+main a {
+    color: #024873; /* Default link color */
+}
+
+main a:hover {
+    color: rgb(239,0,24); /* Color change on hover */
+}
+
+/* Footer Stuff Here */
+footer {
+    background-color: #d9cfc1;
+    text-align: center;
+    color: #024873;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+}
+footer a {
+    color: #024873;
+}
+    
