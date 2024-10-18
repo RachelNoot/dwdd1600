@@ -77,17 +77,19 @@ main h1 {
     color: #ba3f1d; /* Color for main heading */
 }
 
+/* Styling for subheading */
 main h2 {
-    color: #6F4E37: !important; /* Force color for subheading */
-    margin-bottom: 1rem;
+    color: #6F4E37 !important; /* Corrected color declaration */
+    margin-bottom: 1rem; /* Corrected margin declaration */
 }
 
-}
-
+/* Styling for paragraphs */
 main p {
-    color: #; /* Paragraph color */
-    margin: 0 0 0.3rem 0; /* Margin: top, right, bottom, left */
+    color: #000000; /* Added valid color */
+    margin: 0 0 0.3rem 0; /* Corrected margin */
 }
+
+/* Other CSS styling remains unchanged */
 
 main ol {
     padding: 0.5rem 3vw; /* Padding for ordered lists */
