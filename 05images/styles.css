@@ -172,3 +172,13 @@ section.gallery figcaption {
     color: #b64e11;
     margin-top: 0.5rem;
 }
+figure.wrapped {
+    width: 30%; /* Adjusts width to 30% of the main content */
+    margin: 0 0 1rem 2%; /* Adds spacing on the left for text to flow around */
+    float: right; /* Floats image to the right */
+}
+
+figure.wrapped img {
+    width: 100%; /* Ensures image fills the container */
+    height: auto;
+}
