@@ -22,15 +22,15 @@
     <!-- start the page navigation -->
     <nav>
         <ul>
-            <li><a href="index.html">About Us</a></li>
-            <li class="active"><a href="delivery.html">Supplies</a></li>
+            <li ><a href="index.html">About Us</a></li>
+            <li class="active"><a href="delivery.html">Supply Kit</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
     
     <!-- start the page main -->
    <main>
-    <h1>Select which supplies you need and we will send you a</h1>
+    <h1>Supply kit</h1>
     <form method="get" class="myform" action="thanks.html">
      
         <fieldset>   
@@ -41,26 +41,26 @@
         </fieldset>    
         
         <fieldset>
-            <legend>Delivery Method</legend>
-            <label><input type="radio" name="method" value="drone">Drone Delivery (2hrs)</label>
-            <label><input type="radio" name="method" value="cycle">Cycle Delivery (4hrs)</label>
-            <label><input type="radio" name="method" value="robot">Robot Delivery (6hrs)</label>
+            <legend>Starter Kit Options</legend>
+            <label><input type="radio" name="method" value="basic">Basic Clay Kit</label>
+            <label><input type="radio" name="method" value="complete">Complete Tool Set</label>
+            <label><input type="radio" name="method" value="instructions">Project Kit with Instructions</label>
         </fieldset> 
         
         <fieldset>
-            <legend>Delivery Options</legend>
-            <label><input type="checkbox" name="porch" value="chosen"> Front Porch</label>
-            <label><input type="checkbox" name="deck" value="chosen"> Back Deck</label>
-            <label><input type="checkbox" name="driveway" value="chosen"> Driveway</label>      
-            <label><input type="checkbox" name="garage" value="chosen"> Inside the Garage</label>  
+            <legend>Color Palette Options</legend>
+            <label><input type="checkbox" name="pastels" value="chosen"> Soft Pastels</label>
+            <label><input type="checkbox" name="neutrals" value="chosen"> Warm Neutrals</label>
+            <label><input type="checkbox" name="earthy" value="chosen"> Earthy Tones</label>      
+            <label><input type="checkbox" name="bright" value="chosen"> Bright and Cheerful</label>  
             
-            <label>Preferred Delivery Time
+            <label>Preferred Crafting Session
                 <select name="time">
                     <option value="none">Please Select</option>
-                    <option value="morning">Between 7:00am and 11:00am</option>
-                    <option value="noon">Between 11:00am and 2:00pm</option>
-                    <option value="afternoon">Between 2:00pm and 5:00pm</option>
-                    <option value="evening">Between 5:00pm and 8:00pm</option>
+                    <option value="quick">Quick Session (15-30 min)</option>
+                    <option value="medium">Medium Session (30-60 min)</option>
+                    <option value="detailed">Detailed Session (1-2 hours)</option>
+                    <option value="full">Full Project Day</option>
                 </select>  
             </label>
         </fieldset>
@@ -69,28 +69,11 @@
             <textarea name="comments"></textarea>
         </label>
         
-        <!-- Start of the Project Cost Estimator section -->
-        <fieldset>
-            <legend>Project Cost Estimator</legend>
-            <label>Supplies You Already Own
-                <textarea name="owned_supplies" placeholder="List supplies you already own..."></textarea>
-            </label>
-            <label>Supplies You Need to Buy
-                <textarea name="needed_supplies" placeholder="List supplies you need to buy..."></textarea>
-            </label>
-            <label>Approximate Project Cost
-                <input type="text" name="project_cost" placeholder="Estimated cost will appear here..." readonly>
-            </label>
-            <label>Store Recommendations
-                <textarea name="store_recommendations" placeholder="Recommended stores will appear here..." readonly></textarea>
-            </label>
-        </fieldset>
-        <!-- End of the Project Cost Estimator section -->
-        
-        <input type="submit" value="Send Delivery Request">
+        <input type="submit" value="Submit Supply Request">
     </form>
 </main>
 
+    
     <footer>
         <p>&copy; 2024 &bull; Rachel Noot &bull; <a href="mailto:rachelenoot@gmail.com">Email Us</a></p>
     </footer>
