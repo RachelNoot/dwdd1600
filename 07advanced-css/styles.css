@@ -154,6 +154,10 @@ section.gallery {
     justify-content: flex-start;
     padding: 1rem 0;
 }
+.clay-image {
+    width: 72.25px;
+    height: 85px;
+}
 
 section.gallery figure {
     flex: 1 1 calc(25% - 1rem); /* Allows four items per row, with space in between */
@@ -183,9 +187,6 @@ figure.wrapped img {
     height: auto;
 }
 
-
-
-}
 
 .myform fieldset{
    border: 1px solid #43a0b6;
@@ -260,56 +261,95 @@ figure.wrapped img {
 
 
 
-/* Small screens */
+/* Small Screens */
 @media only screen and (max-width: 600px) {
     nav ul {
-        margin: 0;
-        padding: 0 2vw;
-        list-style-type: none;
+        flex-direction: column; /* Stack links vertically */
     }
+
+    nav li {
+        flex: none; /* Remove equal-width distribution */
+        width: 100%; /* Make each link span the full width */
+    }
+
     nav a {
-        display: block;
-        padding: 0.8rem;
-        text-decoration: none;
-        font-weight: 700;
-        text-transform: capitalize;
+        padding: 1rem;
         text-align: center;
-        border-bottom: solid 1px #aaa;
+        border-bottom: 1px solid #aaa; /* Adds a separator for vertical links */
         color: #8c501b;
     }
+
     nav .active a {
         background-color: #8c501b;
-        background-image: linear-gradient(to right, #8c501b, #653a19);
         color: white;
+    }
+
+    nav a:hover {
+        background-color: #653a19;
     }
 }
 
-/* Big screens */
+/* Large Screens */
 @media only screen and (min-width: 601px) {
-    nav {
-        border-top: solid 1px #e0e6e6;
-    }
     nav ul {
-        margin: 0;
-        padding: 0 2vw;
-        list-style-type: none;
-        display: flex;
+        flex-direction: row; /* Horizontal layout */
     }
+
+    nav li {
+        flex: 1; /* Equal width distribution */
+    }
+
     nav a {
-        display: block;
         padding: 1.2rem 1rem 0.3rem 1rem;
-        font-size: 1rem;
-        text-decoration: none;
-        color: #8c501b;
-        font-weight: 600;
-        text-transform: uppercase;
         text-align: center;
-        border-bottom: solid 2px #fff;
+        border-bottom: 2px solid #fff; /* Highlights active link */
     }
+
     nav .active a {
-        border-bottom: solid 2px #8b5022;
+        border-bottom: 2px solid #8b5022;
     }
+
     nav a:hover {
         color: #000;
     }
+}
+
+
+
+
+/* Hero image styling */
+.hero-image {
+    width: 30%; /* Adjust this percentage to control the size of the image */
+    float: right; /* This moves the image to the right */
+    margin-left: 2%; /* Adds some space between the image and text */
+    margin-bottom: 1rem; /* Adds space below the image */
+}
+
+.hero-image img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+
+/* Gallery Styling (if you want the image in a gallery-style layout) */
+.angeloGallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.angeloGallery section {
+    flex-basis: 50%;  /* Makes each section take up 50% of the width */
+    margin: 1rem 0;    /* Spacing between sections */
+}
+
+.angeloGallery span {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    color: #895772;
+}
+
+.angeloGallery img {
+    width: 98%;     /* Image width is almost full width */
+    height: auto;   /* Maintain aspect ratio */
 }
