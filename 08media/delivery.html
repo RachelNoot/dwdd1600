@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oven Bake Clay: Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Oven bake clay">
+    <meta name="author" content="Rachel Noot">
+     <!-- Link to the Oxygen font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> <!-- Change 'Body' to lowercase 'body' -->
+
+    <!-- Start of the page header -->
+    <header>
+        <h1>Oven-Bake Clay Guide</h1>
+        <p>How to Use Oven-Bake Clay</p>
+    </header>
+    
+    <!-- start the page navigation -->
+  <nav>
+    <ul>
+        <li class="active"><a href="index.html">Step 1: Sculpt Your Creation</a></li>
+        <li><a href="03page2.html">Step 2: Bake the Clay</a></li>
+        <li><a href="gallery.html">Inspiration</a></li>
+        <li><a href="delivery.html">Supply Kit</a></li>
+        <li><a href="activities.html">Clay Workshop</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+    
+    <!-- start the page main -->
+   <main>
+    <h1>Supply kit</h1>
+    <form method="get" class="myform" action="thanks.html">
+     
+        <fieldset>   
+            <legend>Customer Information</legend>
+            <label>First Name* <input type="text" name="fname" required></label>
+            <label>Last Name* <input type="text" name="lname" required></label>
+            <label>Cell Number* <input type="tel" name="phone" required placeholder="987-555-1234"></label>
+        </fieldset>    
+        
+        <fieldset>
+            <legend>Starter Kit Options</legend>
+            <label><input type="radio" name="method" value="basic">Basic Clay Kit</label>
+            <label><input type="radio" name="method" value="complete">Complete Tool Set</label>
+            <label><input type="radio" name="method" value="instructions">Project Kit with Instructions</label>
+        </fieldset> 
+        
+        <fieldset>
+            <legend>Color Palette Options</legend>
+            <label><input type="checkbox" name="pastels" value="chosen"> Soft Pastels</label>
+            <label><input type="checkbox" name="neutrals" value="chosen"> Warm Neutrals</label>
+            <label><input type="checkbox" name="earthy" value="chosen"> Earthy Tones</label>      
+            <label><input type="checkbox" name="bright" value="chosen"> Bright and Cheerful</label>  
+            
+            <label>Preferred Crafting Session
+                <select name="time">
+                    <option value="none">Please Select</option>
+                    <option value="quick">Quick Session (15-30 min)</option>
+                    <option value="medium">Medium Session (30-60 min)</option>
+                    <option value="detailed">Detailed Session (1-2 hours)</option>
+                    <option value="full">Full Project Day</option>
+                </select>  
+            </label>
+        </fieldset>
+        
+        <label>Comments
+            <textarea name="comments"></textarea>
+        </label>
+        
+        <input type="submit" value="Submit Supply Request">
+    </form>
+</main>
+
+    
+    <footer>
+        <p>&copy; 2024 &bull; Rachel Noot &bull; <a href="mailto:rachelenoot@gmail.com">Email Us</a></p>
+    </footer>
+
+</body>
+</html>
